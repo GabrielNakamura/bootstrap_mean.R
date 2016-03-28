@@ -6,9 +6,9 @@ inputs:
 
 x= a matrix or vector object. If a matrix the function will compute the mean richness or mean abundance of all sampling units (rows). If a vector, each value must represent a sample unit.
 
-sub.samples= Numeric vector. Each element represent the sequencial size of sub samples taken at each step of bootstrap procedure.
+sub.samples= Numeric vector. Each element represent the sequencial size of sub-samples taken at each step of bootstrap procedure.
 
-iterations= Numeric. Number of iterations taken at each sample size.
+iterations= Numeric. Number of iterations taken at each sub-sample size.
 
 all_boot= Logical. if TRUE all the values computed at each step of bootstrap procedure will be show in the result. Default is FALSE.
 
