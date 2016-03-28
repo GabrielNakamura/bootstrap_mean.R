@@ -10,17 +10,24 @@ sub.samples= Numeric vector. Each element represent the sequencial size of sub-s
 
 iterations= Numeric. Number of iterations taken at each sub-sample size.
 
-all_boot= Logical. if TRUE all the values computed at each step of bootstrap procedure will be show in the result. Default is FALSE.
+all_boot= Logical. if TRUE all the values computed at each iteration of bootstrap procedure will be show in the result. Default is FALSE.
 
 
 outputs:
-If all_boot argument is FALSE the output will be a list of length four containing the following elements:
-Average_mean= a vector with means of the parameter calculated based on the all iterations in a given sample size.
-Confidence_intervals= a matrix object with lower and upper limits of means at each sample size (based on the number of iterations).
-Average_standard_deviation= a vector with means of the standard deviations of the means calculated at each iteration at each sample size.
+If all_boot argument is set to FALSE the output will be a list of length four containing the following elements:
+
+Average_mean= a vector with means of the parameter calculated based on the all iterations in a given sub-sample size.
+
+Confidence_intervals= a matrix object with lower and upper limits confidence interval of mean calculated at each sub-sample size (based on the number of iterations at each sub-sample size).
+
+Average_standard_deviation= a vector with means of the standard deviations of the means calculated at each each sample size.
+
 differences_up_lower_limits= difference between upper and lower limits of confidence intervals.
+
 If all_boot argument is TRUE the output will also contain:
+
 Matrix_bootstrap_means= a matrix object with all values of means at each sample size at each iteration of bootstrap procedure.
-Matrix_bootstrap_standard_deviation= a matrix object with all values of standard deviation computed from means at each sample size at each iteration of bootstrap procedure.
+
+Matrix_bootstrap_standard_deviation= a matrix object with all values of standard deviation computed from each sample size at each iteration of bootstrap procedure.
 
 
