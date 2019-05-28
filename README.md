@@ -1,4 +1,4 @@
-# bootstrap_mean.R
+# bootstrap_mean
 function to compute mean values and confidence intervals based on bootstrap procedure (adapted from [Pillar, 1998](http://ecoqua.ecologia.ufrgs.br/arquivos/Reprints&Manuscripts/Pillar_1998_AbtractaBot.pdf))
 
 #Arguments
